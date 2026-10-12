@@ -34,5 +34,8 @@
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@9.0.0"
+  "packageManager": "pnpm@9.0.0",
+  "lint-staged": {
+    "*.{astro,ts,js,json,md,css}": ["prettier --write", "eslint --fix"]
+  }
 }
