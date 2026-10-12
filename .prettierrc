@@ -1,21 +1,14 @@
 {
   "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
-  "trailingComma": "es5",
-  "tabWidth": 2,
+  "overrides": [
+    { "files": "*.astro", "options": { "parser": "astro" } }
+  ],
   "semi": true,
   "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
   "printWidth": 100,
   "bracketSpacing": true,
   "arrowParens": "always",
-  "endOfLine": "lf",
-  "overrides": [
-    {
-      "files": "*.astro",
-      "options": { "parser": "astro" }
-    },
-    {
-      "files": "*.md",
-      "options": { "parser": "markdown" }
-    }
-  ]
+  "endOfLine": "lf"
 }
